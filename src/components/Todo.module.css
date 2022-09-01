@@ -1,0 +1,91 @@
+.todo {
+    max-width: 46rem;
+    margin: 4rem auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+    margin-top: -5.8rem;
+}
+
+.todo input[type=text] {
+    width: 100%;
+    background: var(--gray-500);
+    border-radius: 8px;
+    border: 1px solid var(--gray-700);
+    padding: 1rem;
+    color: var(--gray-100);
+    outline: 0;
+}
+
+.todo input[type=text]:focus {
+    border: 1px solid var(--purple);
+}
+
+.todo button[type=submit] {
+    background: var(--blue-dark);
+    padding: 1rem;
+    color: var(--gray-100);
+    font-weight: bold;
+    line-height: 140%;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    transition: background-color 0.2s;
+}
+
+.todo button[type=submit]:hover {
+    background-color: var(--blue);
+}
+
+.todo .info {
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.todo strong {
+    font-size: 0.875rem;
+    line-height: 1.7;
+    margin-right: 0.5rem;
+}
+
+.todo .created strong {
+    color: var(--blue);
+}
+
+.todo .done strong {
+    color: var(--purple);
+}
+
+.todo span {
+    background: var(--gray-400);
+    padding: 0.125rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    color: var(--gray-200);
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.boxTasks li {
+    list-style: none;
+}
